@@ -21,15 +21,16 @@ using namespace std;
 
 int main(void)
 {
-	int lowH;
-	int highH;
-	int lowS;
-	int highS;
-	int lowV;
-	int highV;
+	int lowH = 0;
+	int highH = 8;
+	int lowS = 119;
+	int highS = 255;
+	int lowV = 122;
+	int highV = 255;
 
-	ObjectFollower objFoll = new ObjectFollower(lowH, highH, lowS, highS, lowV, highV);
-	objFoll.goHunting();
+	ObjectFollower* objFoll = new ObjectFollower(lowH, highH, lowS, highS, lowV, highV);
+	objFoll->goHunting();
 	
+	delete objFoll;
 	return 0;
 }
