@@ -13,6 +13,11 @@ void ObjectFollower::goHunting() {
 	cout << "Starting the Hunt" << endl;
 
 	while (1) {
+
+		for (int i = 0; i < 5; ++i) {
+			_objFinder->getObjectDirection();
+		}
+
 		int objDir = _objFinder->getObjectDirection();
 		if (objDir < 0) {
 			cout << "Target is " << 0 - objDir << " Left" << endl;
@@ -23,8 +28,12 @@ void ObjectFollower::goHunting() {
 			_driveController->turnRight(objDir);
 		}
 
-		cout << "Hunting" << endl;
-		_driveController->moveForward(100);
+		if (_objFinder->getObjectSize()) {
+			cout << "Hunting" << endl;
+			_driveController->moveForward(100);
+		}
+
+		while (1);
 
 		if (waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
 		{

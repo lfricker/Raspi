@@ -1,5 +1,7 @@
 #include "Odometry.h"
+#include <iostream>
 
+using namespace std;
 
 Odometry::Odometry(Encoder* encoder_left, Encoder* encoder_right) {
 	this->encoder_left = encoder_left;
@@ -9,11 +11,13 @@ Odometry::Odometry(Encoder* encoder_left, Encoder* encoder_right) {
 }
 
 double Odometry::getDistance() {
-	return ((this->encoder_left->getTicks() - mem_left_ticks) + (this->encoder_right->getTicks() - mem_right_ticks)) / 2 * mm_per_tick;
+	double distance = ((encoder_left->getTicks() - mem_left_ticks) + (encoder_right->getTicks() - mem_right_ticks)) / 2 * mm_per_tick;
+	cout << distance << endl;
+	return distance;
 }
 
 double Odometry::getHeading() {
-	return ticks_to_angle((this->encoder_left->getTicks() - mem_left_ticks) - (this->encoder_right->getTicks() - mem_right_ticks));  // returns positive angle for right turn and negative for left turn
+	return ticks_to_angle((encoder_left->getTicks() - mem_left_ticks) - (encoder_right->getTicks() - mem_right_ticks));  // returns positive angle for right turn and negative for left turn
 }
 
 double Odometry::ticks_to_angle(long ticks) {
@@ -21,6 +25,6 @@ double Odometry::ticks_to_angle(long ticks) {
 }
 
 void Odometry::reset() {
-	mem_left_ticks = this->encoder_left->getTicks();
-	mem_right_ticks = this->encoder_right->getTicks();
+	mem_left_ticks = encoder_left->getTicks();
+	mem_right_ticks = encoder_right->getTicks();
 }

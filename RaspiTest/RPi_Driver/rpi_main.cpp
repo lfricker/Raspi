@@ -1,19 +1,6 @@
-//#include <wiringPi.h>
-//#include "RPiMotor.h"
-//#include "RPiEncoder.h"
-//#include "Odometry.h"
-//#include "DifferentialDrive.h"
-//#include "Compass.h"
-//#include "RPiCompassEncoder.h"
-//#include "RPiCompassI2C.h"
 #include "ObjectFollower.h"
-#include <thread>
-#include <chrono>
-#include <math.h>
 #include <stdio.h>
 
-//#include <opencv2/opencv.hpp>
-//#include <opencv2/opencv.hpp>
 using namespace std;
 
 // USB Dongle 192.168.1.2
@@ -28,9 +15,9 @@ int main(void)
 	int lowV = 122;
 	int highV = 255;
 
-	ObjectFollower* objFoll = new ObjectFollower(lowH, highH, lowS, highS, lowV, highV);
-	objFoll->goHunting();
+	ObjectFollower* deamonHunter = new ObjectFollower(lowH, highH, lowS, highS, lowV, highV);
+	deamonHunter->goHunting();
 	
-	delete objFoll;
+	delete deamonHunter;
 	return 0;
 }

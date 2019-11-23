@@ -1,8 +1,5 @@
 #include "ObjectFinder.h"
-#pragma once
 
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
 using namespace cv;
 
 ObjectFinder::ObjectFinder(int lowH, int highH, int lowS, int highS, int lowV, int highV) {
@@ -14,7 +11,7 @@ ObjectFinder::ObjectFinder(int lowH, int highH, int lowS, int highS, int lowV, i
 	_highS = highS;
 	_highV = highV;
 
-	 _cap = new VideoCapture(0); 
+	 _cap = new VideoCapture(1); 
 
 	if (!_cap->isOpened())
 	{

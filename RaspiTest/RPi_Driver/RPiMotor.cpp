@@ -17,8 +17,8 @@ void RPiMotor::setPower(double power) {
 		this->power = power;
 	}
 
-	softPwmWrite(this->BCM_pin1, (int)this->power);
-	softPwmWrite(this->BCM_pin2, 0);
+	softPwmWrite(BCM_pin1, (int)this->power);
+	softPwmWrite(BCM_pin2, 0);
 }
 
 double RPiMotor::getPower() {
