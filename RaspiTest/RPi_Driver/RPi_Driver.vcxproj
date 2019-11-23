@@ -69,6 +69,9 @@
     </RemotePostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DriveController.cpp" />
+    <ClCompile Include="ObjectFinder.cpp" />
+    <ClCompile Include="ObjectFollower.cpp" />
     <ClCompile Include="RPiCompassEncoder.cpp" />
     <ClCompile Include="RPiCompassI2C.cpp" />
     <ClCompile Include="rpi_main.cpp" />
@@ -77,6 +80,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Compass.h" />
+    <ClInclude Include="DriveController.h" />
+    <ClInclude Include="ObjectFinder.h" />
+    <ClInclude Include="ObjectFollower.h" />
     <ClInclude Include="RPiCompassEncoder.h" />
     <ClInclude Include="RPiCompassI2C.h" />
     <ClInclude Include="RPiEncoder.h" />

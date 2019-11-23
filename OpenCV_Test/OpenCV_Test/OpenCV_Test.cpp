@@ -10,7 +10,7 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-	VideoCapture cap(2); //capture the video from webcam
+	VideoCapture cap(0); //capture the video from webcam
 
 	if (!cap.isOpened())  // if not success, exit program
 	{
@@ -134,9 +134,7 @@ int main(int argc, char** argv)
 			iLastY = posY;
 		}
 
-		// find objects with more than 3 corners
-
-		//todo
+		
 
 
 		imshow("Thresholded Image", imgThresholded); //show the thresholded image
@@ -153,22 +151,3 @@ int main(int argc, char** argv)
 
 	return 0;
 }
-
-		/*
-		int x_size = 640;
-		int y_size = 480;
-
-		Point p1(0,0);
-		Point p2(x_size, y_size);
-		Point p3(x_size, 0);
-		Point p4(0, y_size);
-		Scalar color(0, 0, 255); // bgr -> (0,0,255) red
-
-		Point r1(x_size / 10 * 4, y_size / 10 * 4);
-		Point r2(x_size / 10 * 6, y_size / 10 * 6);
-		Rect rect(r1, r2);
-
-		line(imgOriginal, p1, p2, color);
-		line(imgOriginal, p3, p4, color);
-		rectangle(imgOriginal, rect, color);
-		*/

@@ -2,9 +2,10 @@ C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\DifferentialDrive.cpp|/home/p
 C:\Users\lukaf\source\repos\RaspiTest\Shared_Files|/home/pi/projects/RPi_Driver/Shared_Files
 @C:\Users\lukaf\source\repos\RaspiTest\Shared_Files|@/home/pi/projects/RPi_Driver/Shared_Files
 C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\Odometry.cpp|/home/pi/projects/RPi_Driver/Shared_Files/Odometry.cpp
-C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiCompassEncoder.cpp|/home/pi/projects/RPi_Driver/RPi_Driver/RPiCompassEncoder.cpp
+C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\ObjectFinder.cpp|/home/pi/projects/RPi_Driver/RPi_Driver/ObjectFinder.cpp
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver|/home/pi/projects/RPi_Driver/RPi_Driver
 @C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver|@/home/pi/projects/RPi_Driver/RPi_Driver
+C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiCompassEncoder.cpp|/home/pi/projects/RPi_Driver/RPi_Driver/RPiCompassEncoder.cpp
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiCompassI2C.cpp|/home/pi/projects/RPi_Driver/RPi_Driver/RPiCompassI2C.cpp
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\rpi_main.cpp|/home/pi/projects/RPi_Driver/RPi_Driver/rpi_main.cpp
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiEncoder.cpp|/home/pi/projects/RPi_Driver/RPi_Driver/RPiEncoder.cpp
@@ -14,6 +15,7 @@ C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\Encoder.h|/home/pi/projects/R
 C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\Motor.h|/home/pi/projects/RPi_Driver/Shared_Files/Motor.h
 C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\Odometry.h|/home/pi/projects/RPi_Driver/Shared_Files/Odometry.h
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\Compass.h|/home/pi/projects/RPi_Driver/RPi_Driver/Compass.h
+C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\ObjectFinder.h|/home/pi/projects/RPi_Driver/RPi_Driver/ObjectFinder.h
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiCompassEncoder.h|/home/pi/projects/RPi_Driver/RPi_Driver/RPiCompassEncoder.h
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiCompassI2C.h|/home/pi/projects/RPi_Driver/RPi_Driver/RPiCompassI2C.h
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiEncoder.h|/home/pi/projects/RPi_Driver/RPi_Driver/RPiEncoder.h

@@ -1,5 +1,6 @@
 C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\DifferentialDrive.cpp|637075189891948041|~/projects/RPi_Driver|
 C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\Odometry.cpp|637075175504929717|~/projects/RPi_Driver|
+C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\ObjectFinder.cpp|637101129854451532|~/projects/RPi_Driver|
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiCompassEncoder.cpp|637064271890917090|~/projects/RPi_Driver|
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiCompassI2C.cpp|637081271103564769|~/projects/RPi_Driver|
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\rpi_main.cpp|637087209963549452|~/projects/RPi_Driver|
@@ -10,6 +11,7 @@ C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\Encoder.h|637062537947801234|
 C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\Motor.h|637062395446016729|~/projects/RPi_Driver|
 C:\Users\lukaf\source\repos\RaspiTest\Shared_Files\Odometry.h|637062575080382337|~/projects/RPi_Driver|
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\Compass.h|637064271891698200|~/projects/RPi_Driver|
+C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\ObjectFinder.h|637101129772466914|~/projects/RPi_Driver|
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiCompassEncoder.h|637064271890604716|~/projects/RPi_Driver|
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiCompassI2C.h|637064271891073310|~/projects/RPi_Driver|
 C:\Users\lukaf\source\repos\RaspiTest\RPi_Driver\RPiEncoder.h|637063168273891006|~/projects/RPi_Driver|

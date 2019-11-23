@@ -1,5 +1,4 @@
-﻿  Das Remoteprojektverzeichnis wird bereinigt.
-  Quellen werden überprüft.
+﻿  Quellen werden überprüft.
   Quellen werden remote nach "192.168.1.2" kopiert.
   Die Architektur wird überprüft.
   Die Architektur wird überprüft.
@@ -7,6 +6,7 @@
   Quellen werden kompiliert:
   DifferentialDrive.cpp
   Odometry.cpp
+  ObjectFinder.cpp
   RPiCompassEncoder.cpp
   RPiCompassI2C.cpp
   rpi_main.cpp
