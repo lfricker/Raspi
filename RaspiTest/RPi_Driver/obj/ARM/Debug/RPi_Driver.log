@@ -1,0 +1,16 @@
+﻿  Das Remoteprojektverzeichnis wird bereinigt.
+  Quellen werden überprüft.
+  Quellen werden remote nach "192.168.1.2" kopiert.
+  Die Architektur wird überprüft.
+  Die Architektur wird überprüft.
+  Remotebuild wird gestartet.
+  Quellen werden kompiliert:
+  DifferentialDrive.cpp
+  Odometry.cpp
+  RPiCompassEncoder.cpp
+  RPiCompassI2C.cpp
+  rpi_main.cpp
+  RPiEncoder.cpp
+  RPiMotor.cpp
+  Objekte werden verknüpft.
+g++ : error : opencv_world411d.lib: Datei oder Verzeichnis nicht gefunden
