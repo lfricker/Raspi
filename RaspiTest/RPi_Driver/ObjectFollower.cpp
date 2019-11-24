@@ -14,10 +14,12 @@ void ObjectFollower::goHunting() {
 
 	while (1) {
 
+		//Read 5 dummy-pictures to make the object detection more stable
 		for (int i = 0; i < 5; ++i) {
 			_objFinder->getObjectDirection();
 		}
 
+		//adjust the direction according to the object position
 		int objDir = _objFinder->getObjectDirection();
 		if (objDir < 0) {
 			cout << "Target is " << 0 - objDir << " Left" << endl;
@@ -28,12 +30,11 @@ void ObjectFollower::goHunting() {
 			_driveController->turnRight(objDir);
 		}
 
+		//move towards the object if it has a size (if an object is detected)
 		if (_objFinder->getObjectSize()) {
 			cout << "Hunting" << endl;
 			_driveController->moveForward(100);
 		}
-
-		while (1);
 
 		if (waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
 		{
