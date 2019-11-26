@@ -2,14 +2,9 @@
 
 using namespace cv;
 
-ObjectFinder::ObjectFinder(int lowH, int highH, int lowS, int highS, int lowV, int highV) {
+ObjectFinder::ObjectFinder(hsvFilter_t filter) {
 
-	_lowH = lowH;
-	_lowS = lowS;
-	_lowV = lowV;
-	_highH = highH;
-	_highS = highS;
-	_highV = highV;
+	_filter = filter;
 
 	 _cap = new VideoCapture(1); 
 
@@ -40,15 +35,9 @@ int ObjectFinder::getObjectDirection() {
 
 		Mat imgThresholded;
 
-		inRange(imgHSV, Scalar(_lowH, _lowS, _lowV), Scalar(_highH, _highS, _highV), imgThresholded); //Threshold the image
+		inRange(imgHSV, Scalar(_filter.lowH, _filter.lowS, _filter.lowV),
+			            Scalar(_filter.highH, _filter.highS, _filter.highV), imgThresholded); //Threshold the image
 
-		//morphological opening (removes small objects from the foreground)
-		erode(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
-		dilate(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
-
-		//morphological closing (removes small holes from the foreground)
-		dilate(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
-		erode(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
 
 		//Calculate the moments of the thresholded image
 		Moments oMoments = moments(imgThresholded);
@@ -76,5 +65,5 @@ int ObjectFinder::getObjectSize() {
 }
 
 ObjectFinder::~ObjectFinder() {
-
+	delete _cap;
 }

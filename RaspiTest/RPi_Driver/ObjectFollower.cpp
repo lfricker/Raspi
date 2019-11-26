@@ -3,9 +3,9 @@
 
 using namespace std;
 
-ObjectFollower::ObjectFollower(int lowH, int highH, int lowS, int highS, int lowV, int highV) {
+ObjectFollower::ObjectFollower(hsvFilter_t filter) {
 	_driveController = new DriveController();
-	_objFinder = new ObjectFinder(lowH, highH, lowS, highS, lowV, highV);
+	_objFinder = new ObjectFinder(filter);
 }
 
 void ObjectFollower::goHunting() {

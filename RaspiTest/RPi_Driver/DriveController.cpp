@@ -15,8 +15,8 @@ DriveController::DriveController() {
 
 	_motor_l   = new RPiMotor(_Motor_BCM[0], _Motor_BCM[1]);
 	_motor_r   = new RPiMotor(_Motor_BCM[2], _Motor_BCM[3]);
-	_encoder_l = new RPiEncoder(23);
-	_encoder_r = new RPiEncoder(22);
+	_encoder_l = new RPiEncoder(_Encoder_BCM[1]);
+	_encoder_r = new RPiEncoder(_Encoder_BCM[0]);
 	_odometry  = new Odometry(_encoder_l, _encoder_r);
 	_diffDrive = new DifferentialDrive(_motor_l, _motor_r);
 
@@ -75,7 +75,6 @@ void DriveController::turnLeft(double angle) {
 
 	while (1) {
 		currentAngle = _compass->getDirection();
-		cout << currentAngle << "\t" << backBoundary << "\t" << target << "\t" << (currentAngle < target || currentAngle > backBoundary) << endl;
 		if (overflow) {
 			if (currentAngle > backBoundary && currentAngle <= target) {
 				break;
@@ -109,7 +108,6 @@ void DriveController::turnRight(double angle) {
 
 	while(1){
 		currentAngle = _compass->getDirection();
-		cout << currentAngle << "\t" << backBoundary << "\t" << target << "\t" << (currentAngle < target || currentAngle > backBoundary) << endl;
 		if (overflow) { // rechts
 			if (currentAngle < backBoundary && currentAngle >= target) {
 				break;

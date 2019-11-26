@@ -9,7 +9,7 @@ private:
 	ObjectFinder* _objFinder;
 
 public:
-	ObjectFollower(int lowH, int highH, int lowS, int highS, int lowV, int highV);
+	ObjectFollower(hsvFilter_t filter);
 	void goHunting();
 };
 

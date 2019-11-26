@@ -6,14 +6,15 @@ using namespace std;
 int main(void)
 {
 	//define the filter-parameters for OpenCV to look for a red object
-	int lowH = 0;
-	int highH = 8;
-	int lowS = 119;
-	int highS = 255;
-	int lowV = 122;
-	int highV = 255;
+	hsvFilter_t redObjectFilter;
+	redObjectFilter.lowH = 0;
+	redObjectFilter.highH = 8;
+	redObjectFilter.lowS = 119;
+	redObjectFilter.highS = 255;
+	redObjectFilter.lowV = 122;
+	redObjectFilter.highV = 255;
 
-	ObjectFollower* redDotHunter = new ObjectFollower(lowH, highH, lowS, highS, lowV, highV);
+	ObjectFollower* redDotHunter = new ObjectFollower(redObjectFilter);
 	redDotHunter->goHunting();
 	
 	delete redDotHunter;
