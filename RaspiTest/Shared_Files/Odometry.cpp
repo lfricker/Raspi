@@ -12,7 +12,6 @@ Odometry::Odometry(Encoder* encoder_left, Encoder* encoder_right) {
 
 double Odometry::getDistance() {
 	double distance = ((encoder_left->getTicks() - mem_left_ticks) + (encoder_right->getTicks() - mem_right_ticks)) / 2 * mm_per_tick;
-	cout << distance << endl;
 	return distance;
 }
 

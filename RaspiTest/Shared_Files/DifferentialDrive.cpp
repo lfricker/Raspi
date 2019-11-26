@@ -17,11 +17,11 @@ void DifferentialDrive::stop() {
 }
 
 void DifferentialDrive::turnLeft() {
-	motor_left->setPower(80);
-	motor_right->setPower(0);
+	motor_left->setPower(0);
+	motor_right->setPower(80);
 }
 
 void DifferentialDrive::turnRight() {
-	motor_left->setPower(0);
-	motor_right->setPower(80);
+	motor_left->setPower(80);
+	motor_right->setPower(0);
 }
