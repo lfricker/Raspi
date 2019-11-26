@@ -1,5 +1,7 @@
 Das Projekt wurde folgendermaßen erweitert:
 
-- Mittels OpenCV und einer USB-Webcam erkennt der Roboter ein markantes Objekt bzw. eine markante Farbe (es wurde ein roter Punkt verwendet). Das gesamte Programm wird vom Raspberry Pi ausgeführt.
+- Mittels OpenCV und einer USB-Webcam erkennt der Roboter ein markantes Objekt bzw. eine markante Farbe (es wurde ein roter Punkt verwendet).
+Das gesamte Programm wird vom Raspberry Pi ausgeführt.
 
-- Es wurde eine Art "Verfolgungs-Modus" implementiert: Der Roboter ermittelt die horizontale Richtung des Objektes, lenkt mittels des Kompasses in dessen Richtung und bewegt sich auf das Objekt zu. Diese Abfolge wird mehrmals wiederholt.
+- Es wurde eine Art "Verfolgungs-Modus" implementiert: Der Roboter ermittelt die horizontale Richtung des Objektes, lenkt mittels des Kompasses in dessen Richtung
+und bewegt sich auf das Objekt zu. Diese Abfolge wird mehrmals wiederholt, bis die ESC-Taste länger gedrückt wird.
