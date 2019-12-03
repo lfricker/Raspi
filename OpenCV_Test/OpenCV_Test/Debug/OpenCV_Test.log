@@ -1,2 +1,0 @@
-﻿  OpenCV_Test.cpp
-C:\Users\lukaf\source\repos\OpenCV_Test\OpenCV_Test\OpenCV_Test.cpp(5,10): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "opencv2/opencv.hpp": No such file or directory

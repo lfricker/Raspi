@@ -1,4 +1,0 @@
-﻿  OpenCV_Test.cpp
-C:\Users\lukaf\source\repos\OpenCV_Test\OpenCV_Test\OpenCV_Test.cpp(93,13): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
-C:\Users\lukaf\source\repos\OpenCV_Test\OpenCV_Test\OpenCV_Test.cpp(94,13): warning C4244: "Initialisierung": Konvertierung von "double" in "int", möglicher Datenverlust
-  OpenCV_Test.vcxproj -> C:\Users\lukaf\source\repos\OpenCV_Test\x64\Debug\OpenCV_Test.exe
